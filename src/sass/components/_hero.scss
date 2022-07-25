@@ -4,10 +4,12 @@
   margin: 0 auto;
   height: 502px;
   overflow: hidden;
+
   @media screen and (min-width: 768px) {
     height: 416px;
     padding-top: 102px;
   }
+
   @media screen and (min-width: 1200px) {
     height: 664px;
     padding-top: 147px;
@@ -26,32 +28,40 @@
   font-family: var(--font-accent);
   text-transform: uppercase;
   margin-bottom: 20px;
+
   &--white {
     @include font(400, 26px, 1.15, 0.04em);
     color: var(--text-color-light);
   }
+
   &--pink {
     @include font(400, 48px, 0.97, normal);
     color: var(--primary-color);
   }
+
   @include tablet {
     width: 162px;
+
     &--white {
       font-size: 22px;
       line-height: 1.14;
     }
+
     &--pink {
       font-size: 34px;
       line-height: 0.91;
     }
   }
+
   @include desktop {
     width: 277px;
     margin-bottom: 24px;
+
     &--white {
       font-size: 38px;
       line-height: 1.16;
     }
+
     &--pink {
       font-size: 58px;
     }
@@ -62,9 +72,11 @@
   position: absolute;
   right: 32px;
   top: -10px;
+
   @include mobile-only {
     display: none;
   }
+
   @include desktop {
     top: 5px;
   }
@@ -83,12 +95,14 @@
   z-index: 2;
   background-color: var(--text-color-light);
   border-radius: 50%;
+
   @include tablet {
     width: 16px;
     height: 16px;
     top: -2px;
     right: -8px;
   }
+
   @include desktop {
     width: 30px;
     height: 30px;
@@ -103,6 +117,7 @@
   @include font(400, 28px, 1.14, 0.04em);
   text-transform: uppercase;
   color: var(--primary-color);
+
   @include desktop {
     font-size: 46px;
     line-height: 1.15;
@@ -114,6 +129,7 @@
   font-family: var(--font-main);
   @include font(400, 8px, 1.25, normal);
   color: var(--text-color-light);
+
   @include desktop {
     font-size: 14px;
     line-height: 1.29;
@@ -123,9 +139,11 @@
 .hero__list {
   display: flex;
   gap: 8px;
+
   @include tablet {
     margin-bottom: 20px;
   }
+
   @include desktop {
     margin-bottom: 40px;
     gap: 12px;
@@ -143,24 +161,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &--pink {
     color: var(--text-color-light);
     background-color: var(--primary-color);
     transition: background-color 250ms;
+
     &:hover,
     &:focus {
       background-color: #f15277;
     }
   }
+
   &--white {
     color: var(--primary-color);
     background-color: var(--text-color-light);
     transition: background-color 250ms;
+
     &:hover,
     &:focus {
       background-color: var(--btn-accent-color);
     }
   }
+
   @include desktop {
     height: 40px;
     font-size: 14px;
@@ -174,9 +197,11 @@
   left: 184px;
   bottom: 56px;
   width: 114px;
+
   @include mobile-only {
     display: none;
   }
+
   @include desktop {
     width: 200px;
     left: 229px;
@@ -188,6 +213,7 @@
   font-family: var(--font-main);
   @include font(400, 8px, 1.5, 0);
   color: var(--text-color-light);
+
   @include desktop {
     font-size: 14px;
     line-height: 1.4;
@@ -208,12 +234,15 @@
   color: var(--primary-color);
   background-color: var(--text-color-light);
   transition: background-color 250ms;
+
   &:hover {
     background-color: var(--btn-accent-color);
   }
+
   @include mobile-only {
     display: none;
   }
+
   @include desktop {
     width: 26px;
     height: 26px;
@@ -222,6 +251,7 @@
 
 .hero__btn-icon {
   fill: currentColor;
+
   @include desktop {
     width: 10px;
     height: 11px;
@@ -233,9 +263,11 @@
   width: 152px;
   bottom: 16px;
   z-index: 1;
+
   @include mobile-only {
     display: none;
   }
+
   @include desktop {
     width: 213px;
     bottom: 60px;
@@ -248,13 +280,19 @@
   right: 32px;
   bottom: 0;
   z-index: 1;
+
   @include tablet {
     width: 146px;
     right: 303px;
   }
+
   @include desktop {
     width: 236px;
     right: 328px;
+
+    animation-name: fall-and-grow;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -266,12 +304,14 @@
   background-color: var(--accent-color);
   bottom: 75px;
   right: -62px;
+
   @include tablet {
     height: 335px;
     width: 333px;
     bottom: 40px;
     right: 185px;
   }
+
   @include desktop {
     height: 534px;
     width: 534px;
@@ -286,9 +326,11 @@
   right: 32px;
   bottom: 0px;
   z-index: 2;
+
   @include mobile-only {
     display: none;
   }
+
   @include desktop {
     width: 304px;
     right: 16px;

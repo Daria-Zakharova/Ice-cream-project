@@ -1,0 +1,13 @@
+@keyframes fall-and-grow {
+    0% {
+        transform: translateX(-500px) translateY(-665px)scale(.1);
+    }
+    
+    50% {
+        transform: translateX(0) translateY(250px) scale(.5);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+}
