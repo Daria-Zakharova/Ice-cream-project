@@ -19,6 +19,7 @@
       #ffffff 51%,
       var(--bg-color-light) 51%
     );
+    padding-bottom: 0;
   }
 
   @include desktop() {
@@ -27,6 +28,7 @@
       #ffffff 24%,
       var(--bg-color-light) 24%
     );
+    padding-bottom: 60px;
   }
 }
 
@@ -224,13 +226,14 @@
   @include centered;
 
   min-width: 161px;
-  min-height: 44px;
+  max-height: 44px;
   padding: 12px;
 
   border-style: none;
   border-radius: 22px;
+  cursor: pointer;
 
-  @include font(500, var(--font-size), 1.31, 0.04em);
+  @include font(500, var(--font-size), 1.21, 0.04em);
   color: var(--btn-primary-color);
   background-color: var(--text-color-light);
 
@@ -255,8 +258,13 @@
   }
 }
 
+.contacts__btn-text {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
 .contacts__btn-icon {
-  fill: var(--btn-primary-color);
+  stroke: var(--btn-primary-color);
   transition: background-color var(--transition-prop);
 }
 
@@ -270,5 +278,5 @@
 }
 
 .contacts__btn:hover .contacts__btn-icon {
-  fill: var(--text-color-light);
+  stroke: var(--text-color-light);
 }
