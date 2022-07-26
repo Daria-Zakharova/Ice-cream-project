@@ -193,6 +193,10 @@
   @include tablet {
     font-size: 16px;
     line-height: 1.31;
+
+    &:hover {
+      background-color: var(--btn-accent-color);
+    }
   }
 
   .about__icon {
