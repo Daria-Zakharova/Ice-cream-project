@@ -190,6 +190,8 @@
   text-align: left;
   cursor: pointer;
 
+  transition: background-color var(--transition-prop);
+
   @include tablet {
     font-size: 16px;
     line-height: 1.31;

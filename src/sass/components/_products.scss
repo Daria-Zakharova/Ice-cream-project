@@ -250,10 +250,12 @@
     border-radius: 50%;
     border: none;
     background-color: #ffffff;
+    fill: var(--primary-color);
     cursor: pointer;
-    transition: var(--transition-prop);
+    transition: transform var(--transition-prop), border-color var(--transition-prop);
+    border: 1px solid transparent;
     &:hover,
     &:focus {
-        border: 1px solid var(--btn-primary-color);
+        border-color: var(--btn-primary-color);
     }
 }
